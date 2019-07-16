@@ -5,7 +5,7 @@ const app = express()
 const server = require('http').Server(app)  // extrai o servidor http do app
 const io = require('socket.io')(server) // habilita que o server entenda o protocolo ws websocket (real time)
 
-mongoose.connect('mongodb://omnistack:nery123456@ds121415.mlab.com:21415/omnistack-emmanuel',{useNewUrlParser: true})
+mongoose.connect('mongodb://omnistack:<put_senha_here>@ds121415.mlab.com:21415/omnistack-emmanuel',{useNewUrlParser: true})
 
 
 app.use((req,res,next) =>
